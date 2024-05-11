@@ -43,7 +43,7 @@ export default new Vuex.Store({
         if (setDir.endsWith("/")) {
           setDir = setDir.substr(0, setDir.length - 1);
         }
-        state.homeDir = setDir;
+        state.homeDir = setDir + '/LAN';
       }
     },
     [Mutations.API_KEY](state, key) {
